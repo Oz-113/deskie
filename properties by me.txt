@@ -1,0 +1,11 @@
+This project has come so far,
+
+ it could track a virtual volume and adjust the slider accordingly. After tinkering around I have found out that not tracking any volume was a better approach, now just a volume up or volume down icon appears on the screen when triggered, in this project there is a matrix rotary encoder encoder that utilizes interrupts to determine the direction and so it delivers almost perfect direction and step values. 
+
+LittleFS is used to utilise the 16MB Flash for binary raw files of the frames, the frames are then read to a frame buffer which allows the TFT_eSPI library to push the Image to the allocated Sprite which gets rid of flickering and allows updating the screen without clearing behind what was present. 
+
+Preferences library allows for saving and reading of values which was a useless feature after I abandoned the virtual volume and adjustable speed idea, could still be used to remotely wake up the computer with a web server or another things.
+
+After discarding the idea of the Arc following the virtual volume too, it is just a gif player without any ui elements, pause next and previous could maybe add something but new ideas must be found to further elevate the feeling of a control center rather than just a fancy gif player.
+
+Example: A Menu that stops gif playing and shows some settings? enough app memory is left for such things .
